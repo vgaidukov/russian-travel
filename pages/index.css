@@ -1,1 +1,19 @@
 @import url(../vendor/normalize.css);
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    position: relative;
+
+}
+.header {
+    min-height: 100px;
+}
+.main {
+    display: flex;
+    flex: 1 1 auto;
+}
+.footer {
+    min-height: 100px;
+}
