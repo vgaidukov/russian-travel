@@ -12,17 +12,16 @@
 </head>
 <body>
     <div class="page">
-        <div class="wrapper">
-
-            <header class="header">
-                <img class="header__logo" src="./images/header-logo.svg" alt="Логотип Россия">
-                <div class="header__lang-links">
-                    <p class="header__lang-link_ru">Ru</p>
-                    <p class="header__lang-link_en">En</p>
-                </div>
-             </header>
+        <header class="header">
+            <img class="header__logo" src="./images/header-logo.svg" alt="Логотип Россия">
+            <div class="header__lang-links">
+                <p class="header__lang-link_ru">Ru</p>
+                <p class="header__lang-link_en">En</p>
+            </div>
+        </header>
     
-            <main class="main">
+        <main class="main">
+            <div class="wrapper">
                 <section class="lead">
                     <h1 class="lead__title">Путешествия по России</h1>
                     <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
@@ -33,15 +32,23 @@
                     <p class="lead__caption">ваша полка — верхняя</p>
                 </section>
 
+                <section class="intro">
+                    <h2 class="intro__title">Чего мы там не видели?</h2>
+                    <p class="intro__text">По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но только 36% планируют провести отпуск в родной стране. Мол, чего мы тут, дома, не видели? На самом деле, Россия — это целая вселенная с ласковым морем юга, густыми лесами Саян и суровыми льдами плато Путорана. А ещё увидеть все эти красоты можно без миллионов на счету, загранпаспорта и многочасовых перелетов. Как, например, Вера Башмакова — смелая молодая мама, которая взяла в охапку троих детей, усадила их в свою «Ладу» и проехала 20 тысяч километров по родной стране. Мы выбрали и описали некоторые интересные места, достойные вашего отпуска.</p>
+                    <ul class="intro__list list">
+                        <li>Часовых поясов <span class="intro__digits">11</span></li>
+                        <li>Объектов природного наследия ЮНЕСКО <span class="intro__digits">12</span></li>
+                        <li>Объектов культурного наследия ЮНЕСКО <span class="intro__digits">16</span></li>
+                        <li>Природных заповедников <span class="intro__digits">105</span></li>
+                        <li>Аэропортов <span class="intro__digits">241</span></li>
+                    </ul>
+                </section>
+            </div>
+        </main>
 
-            </main>
-    
-            <footer class="footer">
-                FOOTER
-            </footer>
-    
-        </div>
+        <footer class="footer">
+            FOOTER
+        </footer>
     </div>
-  
 </body>
 </html>
