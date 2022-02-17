@@ -6,6 +6,10 @@ p, h1, h2 {
     padding: 0;
 }
 
+body {
+    
+}
+
 .list {
     margin: 0;
     padding: 0;
@@ -17,14 +21,21 @@ p, h1, h2 {
     text-decoration: none;
 }
 
+.wrapping {
+    display: none;
+}
+
+.no-wrapping{
+    display: contents;
+}
+
 .page {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     max-width: 100vw;
-    background-color: #2A2C2F;
     padding: 28px 48px 0;
-    overflow: visible;
+    background-color: #2A2C2F;
 
     font-family: 'Inter';
     font-style: 400;
@@ -242,6 +253,64 @@ p, h1, h2 {
     margin-bottom: 0;
 }
 
+/*  COVER  ===========================================*/
+
+.baikal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cover {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2A2C2F;
+    opacity: 0.3;
+    z-index: 1;
+    transition: opacity 200ms ease-in-out;
+}
+
+.cover:hover:before {
+    opacity: 0.8;
+}
+
+.cover__background {
+    width: 100%;
+}
+
+.cover__text{
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+}
+
+.cover__title {
+    margin-bottom: 32px;
+    font-size: 72px;
+    line-height: 1.06;
+}
+.cover__subtitle {
+    padding: 0 17.86%;
+    font-size: 18px;
+    line-height: 1.22;
+}
+
 /*  1024px  ===========================================*/
 
 @media screen and (max-width: 1279.98px) {
@@ -263,7 +332,9 @@ p, h1, h2 {
         grid-template-columns: 47.415% auto;
         column-gap: 32px;
     }
-
+    .cover {
+        width: 100vw;
+    }
 }
 
 /*  768px   ===========================================*/
@@ -373,6 +444,23 @@ p, h1, h2 {
     }
     .place__paragraph_wrapping {
         display: contents;
+    }
+    .cover__title {
+        max-width: 255px;
+        margin-bottom: 16px;
+        font-size: 32px;
+        line-height: 1.09;
+    }
+    .cover__subtitle {
+        padding: 0 16px;
+        font-size: 14px;
+        line-height: 1.14;
+    }
+    .wrapping {
+        display: contents;
+    }
+    .no-wrapping {
+        display: none;
     }
 }
 
