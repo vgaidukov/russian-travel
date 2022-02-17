@@ -26,7 +26,7 @@ body {
 }
 
 .no-wrapping{
-    display: contents;
+    display: block;
 }
 
 .page {
@@ -161,7 +161,7 @@ body {
     font-weight: 900;
     font-size: 12px;
     line-height: 1.5;
-    letter-spacing: -.17px;
+    letter-spacing: -.1px;
 }
 
 .intro__digits {
@@ -253,7 +253,7 @@ body {
     margin-bottom: 0;
 }
 
-/*  COVER  ===========================================*/
+/*  BAIKAL  ===========================================*/
 
 .baikal{
     display: flex;
@@ -306,9 +306,37 @@ body {
     line-height: 1.06;
 }
 .cover__subtitle {
-    padding: 0 17.86%;
+    padding: 0 100px;
     font-size: 18px;
     line-height: 1.22;
+}
+
+/*  FOOTER  ===========================================*/
+
+.footer {
+    margin: 92px 0 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__navigation {
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: row;
+
+    font-size: 16px;
+    line-height: 1.12;
+}
+.footer__link {
+    margin-right: 18.7px;
+}
+.footer__link:last-child {
+    margin-right: 0;
+}
+.footer__copyright {
+    font-size: 14px;
+    line-height: 1.14;
 }
 
 /*  1024px  ===========================================*/
@@ -368,6 +396,9 @@ body {
     .place__paragraph {
         font-size: 16px;
         line-height: 1.63;
+    }
+    .footer {
+        margin-top: 88px;
     }
 }
 
@@ -443,7 +474,7 @@ body {
         display: none;
     }
     .place__paragraph_wrapping {
-        display: contents;
+        display: block;
     }
     .cover__title {
         max-width: 255px;
@@ -457,10 +488,24 @@ body {
         line-height: 1.14;
     }
     .wrapping {
-        display: contents;
+        display: block;
     }
     .no-wrapping {
         display: none;
+    }
+    .footer {
+        flex-direction: column;
+        margin-top: 64px;
+    }
+    .footer__links {
+        flex-direction: column;
+        row-gap: 32px;
+
+        font-size: 24px;
+        line-height: 1;
+    }
+    .footer__copyright {
+        margin-top: 48px;
     }
 }
 
