@@ -2,7 +2,7 @@
     width: 100%;
     margin-bottom: 79.5px;
     display: grid;
-    grid-template-rows: auto;
+    grid-template-rows: repeat(2, auto);
     grid-template-columns: 46.749% auto;
     grid-template-areas: 
         "title website"
