@@ -2,3 +2,10 @@
     grid-area: image;
     width: 100%;
 }
+
+@media screen and (max-width: 767.98px) {
+    .place__image {
+        width: 100vw;
+        align-self: center;
+    }
+}

@@ -6,3 +6,9 @@
     line-height: 1.5;
     letter-spacing: -.1px;
 }
+
+@media screen and (max-width: 991.98px) {
+    .intro__list {
+        max-width: 100%;
+    }
+}

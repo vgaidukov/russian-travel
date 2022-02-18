@@ -1,3 +1,9 @@
 .wrapping {
     display: none;
 }
+
+@media screen and (max-width: 767.98px) {
+    .wrapping {
+        display: block;
+    }
+}

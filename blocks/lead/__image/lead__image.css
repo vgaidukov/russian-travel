@@ -3,3 +3,9 @@
     display: flex;
     position: relative;
 }
+
+@media screen and (max-width: 991.98px) {
+    .lead__image {
+        width: 100vw;
+    }
+}
