@@ -1,4 +1,5 @@
 @import url('../vendor/normalize.css');
+@import url('../vendor/reset-indent.css');
 @import url('../vendor/fonts/fonts.css');
 
 @import url('../blocks/list/list.css');
@@ -43,6 +44,7 @@
 @import url('../blocks/place/__link/place__link.css');
 @import url('../blocks/place/__text/place__text.css');
 @import url('../blocks/place/__paragraph/place__paragraph.css');
+@import url('../blocks/wrapping/wrapping.css');
 
 @import url('../blocks/baikal/baikal.css');
 @import url('../blocks/cover/cover.css');

@@ -1,9 +1,7 @@
-.wrapping {
-    display: none;
-}
+/* переноса текста на новую строку, чтобы попасть в макет по высоте блока place */
 
-@media screen and (max-width: 767.98px) {
+@media screen and (width: 320px) {
     .wrapping {
-        display: block;
+        word-spacing: 150px;
     }
 }
