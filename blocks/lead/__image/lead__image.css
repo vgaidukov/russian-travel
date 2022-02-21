@@ -1,7 +1,6 @@
 .lead__image {
     width: 100%;
-    display: flex;
-    position: relative;
+    height: auto;
 }
 
 @media screen and (max-width: 991.98px) {

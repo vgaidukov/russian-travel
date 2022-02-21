@@ -1,4 +1,6 @@
 .place__title {
+    margin: 0;
+    padding: 0;
     grid-area: title;
     gap: 26px;
 
