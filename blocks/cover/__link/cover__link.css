@@ -1,6 +1,6 @@
 .cover__link {
     width: 100%;
-    height: calc(1184px*0.625);
+    min-height: calc(1184px*0.625);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,7 +34,7 @@
 @media screen and (max-width: 1279.98px) {
     .cover__link {
         width: calc(100% + 2*48px);
-        height: calc(100vw*0.625);
+        min-height: calc(100vw*0.625);
     }
 }
 
