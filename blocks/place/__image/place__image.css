@@ -5,7 +5,13 @@
 
 @media screen and (max-width: 767.98px) {
     .place__image {
-        width: 100vw;
+        width: calc(100% + 2*24px);
         align-self: center;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .place__image {
+        width: calc(100% + 2*16px);
     }
 }

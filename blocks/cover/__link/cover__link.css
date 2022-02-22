@@ -1,6 +1,6 @@
 .cover__link {
     width: 100%;
-    height: calc(1184px*.625);
+    height: calc(1184px*0.625);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,7 +8,6 @@
     z-index: 0;
     background-image: url('../../../images/cover-background.png');
     background-size: cover;
-    overflow: hidden;
 
     text-decoration: none;
     color: #FFFFFF;
@@ -34,7 +33,19 @@
 
 @media screen and (max-width: 1279.98px) {
     .cover__link {
-        width: 100vw;
-        height: calc(100vw*.625);
+        width: calc(100% + 2*48px);
+        height: calc(100vw*0.625);
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .cover__link {
+        width: calc(100% + 2*24px);
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .cover__link {
+        width: calc(100% + 2*16px);
     }
 }
